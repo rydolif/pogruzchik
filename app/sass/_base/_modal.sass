@@ -1,0 +1,99 @@
+.modal
+	position: relative
+	height: auto
+	padding: 50px
+	background-color: #fff
+	z-index: 1
+	box-shadow: 0 0 21px rgba(0, 0, 0, 0.33)
+	max-width: 1170px
+
+	p
+		font-size: 18px
+		margin-bottom: 35px
+		line-height: 1.1
+
+	&__list
+		display: flex
+		justify-content: space-around
+		margin-bottom: 55px
+
+	&__item
+
+		&_img
+			position: relative
+			width: 104px
+			height: 104px
+			box-shadow: 0 0 8px rgba(0, 0, 0, 0.33)
+			background-color: #fff
+			overflow: hidden
+			border-radius: 50%
+			margin: 0 auto 30px
+
+			img
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+				width: 100%
+				height: 100%
+
+		p
+			text-transform: uppercase
+			font-size: 16px
+			font-weight: 700
+			letter-spacing: 0.4px
+			text-align: center
+			margin-bottom: 0
+
+	&__gif
+		height: 450px
+		width: 800px
+		margin: 0 auto
+
+		img
+			width: 100%
+			height: 100%
+
+	.btn
+		width: 100%
+		padding: 18px 0
+		font-size: 12px
+
+	.close
+		position: absolute
+		right: -13px
+		top: -13px
+		display: block
+		width: 30px
+		height: 30px
+		box-shadow: 0 0 8px rgba(0, 0, 0, 0.33)
+		background-color: #ffffff
+		border-radius: 50%
+		border: none
+		cursor: pointer
+
+		&:hover, &:focus
+			outline: none
+
+			&::before,
+			&::after
+				height: 14px
+
+
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			height: 12px
+			width: 2px
+			background: #000
+			transition: all .3s
+
+		&::before
+			transform: translate(-50%, -50%) rotate(45deg)
+
+		&::after
+			transform: translate(-50%, -50%) rotate(-45deg)
+
+
+

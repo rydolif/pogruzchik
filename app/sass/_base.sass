@@ -1,0 +1,119 @@
+@import "fonts"
+
+
+//----------------------fonts---------------------
+$fonts: 'gilroy', sans-serif
+//---------------------end-fonts---------------------
+
+//----------------------color---------------------
+$accent: #d72727
+$text: #000
+
+//---------------------end-color---------------------
+
+body
+	overflow-x: hidden
+	position: relative
+	min-width: 320px
+	font-family: $fonts
+	font-size: 14px
+	color: $text
+	line-height: 1.4
+	font-weight: 400
+
+::selection
+	background-color: $accent
+	color: #fff
+
+a, div, ul, li, input, textarea
+	&:hover,
+	&:focus
+		outline: none
+
+section
+	overflow: hidden
+	
+h1, h2, h3, h4, h5, h6
+	font-weight: 700
+	line-height: 1.4
+	margin: 0
+	padding: 0
+
+h1
+	font-size: 47px
+	text-transform: uppercase
+	font-weight: 400
+	line-height: 1.1
+
+	b
+		color: $accent
+		font-size: 60px
+
+h2
+	font-size: 36px
+	font-weight: 700
+	text-transform: uppercase
+	letter-spacing: 0.9px
+	margin-bottom: 40px
+
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+i
+	font-style: normal
+	font-size: 16px
+	color: #fff
+
+input, textarea
+	border: none
+	border-radius: 0
+	outline: none
+	box-shadow: none
+	-webkit-appearance: none
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5)
+	height: 50px
+	width: 100%
+	line-height: 50px
+	color: $text
+	padding: 0 20px
+
+	&:focus:required:invalid
+		border: none
+		outline: none
+		box-shadow: none
+		-webkit-appearance: none
+		box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5)
+
+	&:required:valid
+		border: none
+		outline: none
+		box-shadow: none
+		-webkit-appearance: none
+		box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5)
+
+	&::placeholder
+		color: #cccccc
+		font-size: 14px
+		line-height: 50px
+
+b, strong
+	font-weight: 700
+
+p
+	margin: 0
+	padding: 0
+
+a,
+a:focus,
+a:hover
+	outline: none
+	text-decoration: none
+
+@import "_base/preloader"
+@import "_base/animation"
+@import "_base/btn"
+@import "_base/form"
+@import "_base/modal"
+@import "_base/hamburger"
