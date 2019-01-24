@@ -22,8 +22,15 @@
 		align-items: center
 
 	&__logo
+		width: 110px
+
 		&::before
 			display: none
+
+		img
+			width: 100%
+			height: auto
+
 
 	a
 		position: relative
@@ -129,6 +136,9 @@
 	padding-top: 245px
 	padding-bottom: 225px
 	background-image: url(../img/hero-bg.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
 
 	&__title
 		position: relative
@@ -343,6 +353,9 @@
 
 .equipment
 	padding-top: 55px
+
+	&__responsive
+		display: none
 	
 	&__bg
 		position: relative
@@ -706,12 +719,10 @@
 
 		a
 			display: block
-			min-width: 370px
+			width: 370px
 			height: 370px
 			margin: 0 15px
 			position: relative
-			right: 15px
-			left: 15px
 
 			&:hover
 				&::before
@@ -777,8 +788,6 @@
 					border-right: 4px solid #fff
 
 
-
-
 	.slick-track
 		background: #fff
 		max-height: 370px
@@ -799,6 +808,7 @@
 		color: transparent
 		transition: all .7s
 		cursor: pointer
+		box-shadow: 0 0 7px rgba(0, 0, 0, 0.33)
 
 		&::before
 			content: ''

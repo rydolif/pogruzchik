@@ -1,11 +1,17 @@
 .modal
 	position: relative
+	top: 30px
 	height: auto
 	padding: 50px
 	background-color: #fff
 	z-index: 1
 	box-shadow: 0 0 21px rgba(0, 0, 0, 0.33)
 	max-width: 1170px
+	width: 100%
+
+	&--responsive
+		background-color: transparent
+		box-shadow: none
 
 	p
 		font-size: 18px
@@ -46,7 +52,6 @@
 			margin-bottom: 0
 
 	&__gif
-		height: 450px
 		width: 800px
 		margin: 0 auto
 
@@ -71,6 +76,7 @@
 		border-radius: 50%
 		border: none
 		cursor: pointer
+		z-index: 10
 
 		&:hover, &:focus
 			outline: none
@@ -94,6 +100,5 @@
 
 		&::after
 			transform: translate(-50%, -50%) rotate(-45deg)
-
 
 

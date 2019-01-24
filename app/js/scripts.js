@@ -10810,11 +10810,10 @@ $(function() {
           top = $(id).offset().top;
       $('body,html').animate({scrollTop: top - 60}, 'slow', 'swing');
   //--------------------закриття меню при кліку на ссилку якоря--------------------
-     // $('.hamburger').removeClass('hamburger--active');
-     // $('.header-menu').removeClass('header-menu');
-     // $('.header--active').removeClass('header--active');
-     // $('.nav--active').removeClass('nav--active');
-
+     $('.hamburger').removeClass('hamburger--active');
+     $('.header--menu').removeClass('header--menu');
+     $('.header--active').removeClass('header--active');
+     $('.nav--active').removeClass('nav--active');
   });
 
   //-------------------------------анімація цифр---------------------------------------
