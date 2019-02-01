@@ -1,119 +1,93 @@
 
 @media only screen and (max-width : 1200px)
-	.modal
-		max-width: 992px
-		padding: 25px
-
-		.close
-			right: 2px
-			top: 2px
-
-		p
-			font-size: 14px
+	h1
+		font-size: 44px
+		b
+			font-size: 46px
 
 	.hero
 		padding: 200px 0
 
 		&__title
-			width: 66%
+			width: 66% !important
 
 
-	.advantages__item
-		padding-left: 10px
-		padding-right: 10px
-	
+	.advantages
+		&__container
+			padding-top: 30px
+		&__item
+			padding-left: 10px
+			padding-right: 10px
+		
 	.equipment
 		&__bg
 			top: 0
 
-		&__block
-			top: 18%
+		// &__block
+		// 	top: 18%
 
-			&_content
-				left: -600px
-				transform: translate(0,0)
+	// 		&_content
+	// 			left: -600px
+	// 			transform: translate(0,0)
 
-			&--seven
-				top: 65%
-				left: 76%
+	// 		&--seven
+	// 			top: 65%
+	// 			left: 76%
 
-				.equipment__block_content
-					top: auto
-					bottom: 40px
-					left: -700px
+	// 			.equipment__block_content
+	// 				top: auto
+	// 				bottom: 40px
+	// 				left: -700px
 
-			&--six
-				top: 43%
-				left: 80%
+	// 		&--six
+	// 			top: 43%
+	// 			left: 80%
 
-				.equipment__block_content
-					left: -600px
+	// 			.equipment__block_content
+	// 				left: -600px
 
-			&--five
-				top: 71%
-				left: 42%
+	// 		&--five
+	// 			top: 71%
+	// 			left: 42%
 
-				.equipment__block_content
-					top: auto
-					bottom: 40px
-					transform: translate(0,0)
-					left: -230px
+	// 			.equipment__block_content
+	// 				top: auto
+	// 				bottom: 40px
+	// 				transform: translate(0,0)
+	// 				left: -230px
 
-			&--four
-				top: 15%
-				left: 40%
+	// 		&--four
+	// 			top: 15%
+	// 			left: 40%
 
-				.equipment__block_content
-					left: -230px
+	// 			.equipment__block_content
+	// 				left: -230px
 
-			&--three
-				top: 35%
-				left: 67%
+	// 		&--three
+	// 			top: 35%
+	// 			left: 67%
 
-				.equipment__block_content
-					left: -450px
+	// 			.equipment__block_content
+	// 				left: -450px
 
-			&--two
-				top: 70%
-				left: 25%
+	// 		&--two
+	// 			top: 70%
+	// 			left: 25%
 
-				.equipment__block_content
-					top: auto
-					bottom: 40px
-					left: -50px
+	// 			.equipment__block_content
+	// 				top: auto
+	// 				bottom: 40px
+	// 				left: -50px
 
-			&--one
-				top: 41%
-				left: 55%
+	// 		&--one
+	// 			top: 41%
+	// 			left: 55%
 
-				.equipment__block_content
-					left: -350px
-
-	.gallery
-		&__title
-			p
-				br
-					display: none
-
-	.feedback
-		&__bg
-			right: -65%
-
-		&__title p
-			width: 100%
-
-	.contacts
-		&__map
-			height: 450px
-
-	.footer__item
-		&:nth-child(1)
-			width: 23%
-			margin-right: 0
+	// 			.equipment__block_content
+	// 				left: -350px
 
 
-@media only screen and (max-width : 992px)
-	
+
 	.equipment
 		&__responsive
 			position: absolute
@@ -194,7 +168,7 @@
 
 		&__content
 			position: relative
-			left: 0
+			// left: 0
 			top: 0
 			width: 100%
 			height: 100%
@@ -208,9 +182,138 @@
 				width: 100%
 		
 
+	.gallery
+		&__title
+			p
+				br
+					display: none
+
+	.feedback
+		&__bg
+			right: -65%
+
+		&__title p
+			width: 100%
+
+	.contacts
+		&__map
+			height: 450px
+
+		&__item
+			&_img
+				width: 100px
+				height: 70px
+
+	.footer__item
+		&:nth-child(1)
+			width: 23%
+			margin-right: 0
+
+	.partners
+		.title--left
+			img
+				width: 70px
+
+	.modal
+		max-width: 992px
+		padding: 25px
+
+		.close
+			right: 2px
+			top: 2px
+
+
+		&__item
+			width: 18%
+
+			p
+				font-size: 14px
+				margin-left: 0 !important
+
+	
+	.gallery__title
+		flex-direction: column-reverse
+
+		p
+			width: 100% !important
+			text-align: center
+
+
+@media only screen and (max-width : 992px)
+	
+	h1
+		font-size: 40px
+		b
+			font-size: 50px
+
 	h2
 		font-size: 34px !important
 
+	.title p
+		width: 60%
+
+	.equipment
+		&__responsive
+			position: absolute
+			display: block
+			background: #fdbd01
+			width: 20px
+			height: 20px
+			border-radius: 50%
+			z-index: 2
+			top: 18%
+
+			&::before,
+			&::after
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				border-radius: 50%
+				border: 1px solid #fdbd01
+				width: 20px
+				height: 20px
+				border-radius: 50%
+				transition: all .4s
+
+			&::before
+				animation: equipment 2s ease-in infinite
+
+			&::after
+				animation: equipment-two 2s ease-in infinite
+
+			&--eight
+				top: 18%
+				left: 71%
+
+			&--seven
+				top: 65%
+				left: 76%
+
+			&--six
+				top: 43%
+				left: 80%
+
+			&--five
+				top: 71%
+				left: 42%
+
+			&--four
+				top: 15%
+				left: 40%
+
+			&--three
+				top: 35%
+				left: 67%
+
+			&--two
+				top: 70%
+				left: 25%
+
+			&--one
+				top: 41%
+				left: 55%
 
 	.title
 		h2
@@ -229,15 +332,15 @@
 				margin-left: 30px
 
 
+	.logo img
+		width: 75px
+		height: 50px
+
 	.header
 		padding: 5px 0
 
 		&__container
 			padding-right: 70px
-
-		&__logo
-			width: 75px
-			height: auto
 
 
 	.nav
@@ -247,7 +350,7 @@
 		height: 100%
 		flex-direction: column
 		right: -100%
-		top: 65px
+		top: 58px
 		z-index: -1
 		background: rgba(255, 255, 255, .95)
 		transition: all .6s
@@ -275,10 +378,10 @@
 
 
 	.hero
-		padding-bottom: 100px
+		padding: 130px 0 100px
 
 		&__title
-			width: 100%
+			width: 100% !important
 
 
 	.production p
@@ -326,7 +429,8 @@
 
 		&__item
 			width: 45%
-			margin-bottom: 10px
+			margin-bottom: 15px
+
 
 	.advantages
 		padding-top: 0
@@ -341,16 +445,23 @@
 		&__block_content--img
 			width: 140px
 
-
-@media only screen and (max-width : 767px)
 	.modal
 		&__list
-			display: none
+			flex-wrap: wrap
 
 		&__item
-			min-width: 150px
-			margin-bottom: 20px
+			min-width: 200px
 
+
+@media only screen and (max-width : 767px)
+	.partners__tabs .tabs__wrap p
+		width: 100%
+
+	.modal
+
+		&__item
+			margin-bottom: 20px
+			min-width: 135px
 
 	h1
 		font-size: 36px
@@ -444,7 +555,37 @@
 			h3, a
 				margin-bottom: 5px
 
+	.gallery__title
+		flex-wrap: wrap
+		flex-direction: column-reverse
+		text-align: center
+		margin-bottom: 15px
 
+	.title
+		margin-bottom: 20px
+		flex-wrap: wrap
+
+		p, h2
+			margin: 0 auto
+
+		h2::before
+				display: none
+
+		p
+			font-size: 12px
+
+		&--left
+			flex-wrap: wrap
+			text-align: center
+
+			div
+				flex-wrap: wrap
+				margin-bottom: 10px
+
+			img
+				margin: 0 auto
+
+		
 @media only screen and (max-width : 576px)
 	.feedback__form
 		padding: 20px
@@ -467,6 +608,7 @@
 
 	.modal__content
 		padding: 15px
+
 
 @media only screen and (max-width : 480px)
 	h1
@@ -526,35 +668,12 @@
 			svg
 				margin-bottom: 10px
 
-	.title
-		margin-bottom: 20px
-		flex-wrap: wrap
 
-		p, h2
-			margin: 0 auto
-
-		h2::before
-				display: none
-
-		p
-			font-size: 10px
-
-		&--left
-			flex-wrap: wrap
-			text-align: center
-
-			div
-				flex-wrap: wrap
-				margin-bottom: 10px
-
-			img
-				margin: 0 auto
 
 	.partners
 		&__number
 			&_item
-				
-
+			
 				h4
 					font-size: 36px
 					margin-bottom: 10px
@@ -573,12 +692,7 @@
 	.equipment
 		padding-bottom: 0
 
-	.gallery__title
-		flex-wrap: wrap
-		flex-direction: column-reverse
-		text-align: center
-		margin-bottom: 15px
-
+	
 
 	.production p
 		font-size: 12px

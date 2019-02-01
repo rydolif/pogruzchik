@@ -1,5 +1,14 @@
 $(function() {
-
+//------------------------------tabs-----------------------------
+  $('.slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrow: false,
+    fade: true,
+    cssEase: 'linear'
+  });
 
 //------------------------------tabs-----------------------------
 
@@ -152,7 +161,7 @@ $(function() {
   'use strict';
 
   var file     = 'img/symbols.html',
-      revision = 1.6;
+      revision = 1.8;
 
   if( !document.createElementNS || !document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' ).createSVGRect )
       return true;
